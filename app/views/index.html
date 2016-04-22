@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ninja gold</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<div id="container">
+
+<p>Your Gold:</p>
+
+         <p>{{session['gold']}}</p>
+        
+   
+<!--farm--> 
+<form class="box" method="post" action="/process_money">
+    <input class="button" type="hidden" type="submit" value="farm" name="action">
+    <h1>Farm</h1>
+    <p>(earns 10 - 20 gold coins)</p>
+    <input class="button" type="submit" value="FIND GOLD">
+        </form>
+<!--cave--> 
+<form class="box" method="post" action="/process_money">
+    <input class="button" type="hidden" type="submit" value="cave" name="action">
+    <h1>Cave</h1>
+    <p>(earns 5 - 10 gold coins)</p>
+    <input class="button" type="submit" value="FIND GOLD">
+        </form>
+<!--house--> 
+<form class="box" method="post" action="/process_money">
+    <input class="button" type="hidden" type="submit" value="house" name="action">
+    <h1>House</h1>
+    <p>(earns 2 - 5 gold coins)</p>
+    <input class="button" type="submit" value="FIND GOLD">
+        </form>
+<!--casino--> 
+<form class="box" method="post" action="/process_money">
+    <input class="button" type="hidden" type="submit" value="casino" name="action">
+    <h1>Casino</h1>
+    <p>(earns/take 0 - 50 gold coins)</p>
+    <input class="button" type="submit" value="FIND GOLD">
+        </form>
+<div id="status_log">
+{% for x in session['log']: %}
+    {{ x | safe }}<br>
+    {% endfor %}
+  </div>
+    
+<form method="post" action="/reset"><input id="button" type="submit" value="reset"></form>
+</div>
+
+
+</div>  
+</body>
+
+</html>

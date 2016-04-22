@@ -1,0 +1,84 @@
+body {
+    background-color: gray;
+    width: 1000px;
+    margin: 0 auto;
+    display: inline-block;
+    }
+.box {
+    width: 200px;
+    height: 200px;
+    border: 4px solid black;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: green;
+    margin-left: 5px;
+    margin-right:5px;
+    color: yellow;
+    box-shadow: 0px 0px 30px 5px #FF7700;
+    }
+.button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: orange;
+    border: 4px solid yellow;
+    border-radius: 40px;
+    font-weight: bold;
+    font-family: arial; 
+    }
+.button:hover {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: black;
+    border: 4px solid blue;
+    border-radius: 40px;
+    font-weight: bold;
+    font-family: arial;
+    color: yellow;
+    box-shadow: 0px 0px 10px 5px yellow;
+    }
+.box p {
+    color: white;
+    font-weight: bold;
+    }
+#display {
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+#container {
+    border: 5px solid green;
+    border-radius: 100px;
+    padding: 30px;
+    margin: 0 auto;
+    width: 900px;
+    height: 900px;
+    }
+#button {
+    padding: 10px;
+    background-color: red;
+    border: 4px solid purple;
+    border-radius: 40px;
+    font-weight: bold;
+    font-family: arial; 
+    display: inline-block;
+    color: purple;
+    margin-top: 30px;
+    }
+#status_log {
+    width: 850px;
+    height: 400px;
+    border: 2px solid white;
+    background-color: gray;
+    color: white;
+    overflow-y: auto;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 25px;
+    box-shadow: 0px 0px 30px 5px white;
+    }
+#red {
+    color: red;
+    }
+#green {
+    color: green;
+}
